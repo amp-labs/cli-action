@@ -1,3 +1,27 @@
 name: "Ampersand amp file deploy action"
 description: "A GitHub Action to deploy amp integration"
 author: "Ampersand"
+
+inputs:
+  api_key:
+    description: "Ampersand API key"
+    required: true
+  project_id:
+    description: "Ampersand project id"
+    required: true
+  directory_path:
+    description: "Path to the directory containing the amp file if not passed it will consider the root directory"
+    required: true
+    default: "."
+  environment:
+    description: "Environment to deploy the amp file (dev, staging, prod)"
+    required: true
+
+runs:
+  using: "docker"
+  image: "Dockerfile"
+  args:
+    - ${{ inputs.api_key }}
+    - ${{ inputs.project_id }}
+    - ${{ inputs.directory_path }}
+    - ${{ inputs.environment }}
