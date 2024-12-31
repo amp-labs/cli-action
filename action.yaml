@@ -10,12 +10,9 @@ inputs:
     description: "Ampersand project id"
     required: true
   directory_path:
-    description: "Path to the directory containing the amp file if not passed it will consider the root directory"
+    description: "Specify the path to the directory containing the amp file. If not provided, the root directory will be used by default."
     required: true
     default: "."
-  environment:
-    description: "Environment to deploy the amp file (dev, staging, prod)"
-    required: true
 
 outputs:
   deployment_status:
@@ -29,4 +26,3 @@ runs:
     - ${{ inputs.api_key }}
     - ${{ inputs.project_id }}
     - ${{ inputs.directory_path }}
-    - ${{ inputs.environment }}
