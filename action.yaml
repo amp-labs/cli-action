@@ -17,6 +17,11 @@ inputs:
     description: "Environment to deploy the amp file (dev, staging, prod)"
     required: true
 
+outputs:
+  deployment_status:
+    description: "Status of the deployment"
+
+
 runs:
   using: "docker"
   image: "Dockerfile"
