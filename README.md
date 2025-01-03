@@ -36,11 +36,11 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Deploy to Ampersand
-        uses: amp-labs/amp-action@main
+        uses: amp-labs/cli-action@main
         with:
-          API_key: ${{ secrets.AMP_API_KEY }}
-          PROJECT_ID: ${{ secrets.AMP_PROJECT_ID }}
-          DIRECTORY_PATH: "path/to/integration/"    #  Path to a folder with the amp.yml file. If not provided, the action will use the root directory.
+          api_key: ${{ secrets.AMP_API_KEY }}
+          project_id: ${{ secrets.AMP_PROJECT_ID }}
+          directory_path: "path/to/integration/"    #  Path to a folder with the amp.yml file. If not provided, the action will use the root directory.
 
 
       # Add more steps here as needed
