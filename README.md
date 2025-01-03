@@ -5,7 +5,7 @@ This GitHub Action allows you to automate the deployment of Ampersand integratio
 
 ## Prerequisites
 
-1. You must have an [Ampersand](https://console.withampersand.com) account and access to your project.
+1. You must have an [Ampersand](https://dashboard.withampersand.com) account and an Ampersand project.
 2. Set up an API key for your project. You can generate the API key from the Ampersand dashboard.
 3. Store your API key in GitHub Secrets (e.g., `AMP_API_KEY`).
 4. Get the project ID from the Ampersand dashboard and store it in GitHub Secrets (e.g., `AMP_PROJECT_ID`).
