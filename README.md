@@ -35,7 +35,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Run Amp Deployment
+      - name: Deploy to Ampersand
         uses: amp-labs/amp-action@main
         with:
           API_key: ${{ secrets.AMP_API_KEY }}
