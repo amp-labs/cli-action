@@ -12,7 +12,7 @@ This GitHub Action allows you to automate the deployment of Ampersand integratio
 
 ## How to use the Github Action
 
-### Step 1: Add the Action to Your Workflow
+### Step 1: Add the Action to your Workflow
 
 Add this action to your GitHub workflow by referencing it in your `.github/workflows/your-workflow.yml` file. 
 
