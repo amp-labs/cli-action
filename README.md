@@ -10,7 +10,7 @@ This GitHub Action allows you to automate the deployment of Ampersand integratio
 3. Store your API key in GitHub Secrets (e.g., `AMP_API_KEY`).
 4. Get your project ID from the [Ampersand dashboard](https://dashboard.withampersand.com/projects/_/settings) and store it in GitHub Secrets (e.g., `AMP_PROJECT_ID`).
 
-## How to Use
+## How to use the Github Action
 
 ### Step 1: Add the Action to Your Workflow
 
