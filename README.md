@@ -40,7 +40,7 @@ jobs:
         with:
           API_key: ${{ secrets.AMP_API_KEY }}
           PROJECT_ID: ${{ secrets.AMP_PROJECT_ID }}
-          DIRECTORY_PATH: "path/to/integration/"    #  Path to the amp.yml file. If not provided, the action will look for the amp.yml file in the root directory.
+          DIRECTORY_PATH: "path/to/integration/"    #  Path to a folder with the amp.yml file. If not provided, the action will use the root directory.
 
 
       # Add more steps here as needed
