@@ -36,7 +36,7 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Deploy to Ampersand
-        uses: amp-labs/cli-action@main
+        uses: amp-labs/cli-action@v1
         with:
           api_key: ${{ secrets.AMP_API_KEY }}
           project_id: ${{ secrets.AMP_PROJECT_ID }}
