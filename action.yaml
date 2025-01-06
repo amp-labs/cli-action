@@ -1,23 +1,22 @@
-name: "Ampersand amp file deploy action"
-description: "A GitHub Action to deploy amp integration"
-author: "Ampersand"
+name: "Official Ampersand Github Action"
+description: "A GitHub Action to deploy Ampersand integrations"
+author: "Ampersand Team"
 
 inputs:
   api_key:
     description: "Ampersand API key"
     required: true
   project_id:
-    description: "Ampersand project id"
+    description: "Ampersand project ID or name"
     required: true
   directory_path:
-    description: "Specify the path to the directory containing the amp file. If not provided, the root directory will be used by default."
-    required: true
+    description: "Specify the path to the directory containing the amp.yaml file. If not provided, the root directory will be used by default."
+    required: false
     default: "."
 
 outputs:
   deployment_status:
     description: "Status of the deployment"
-
 
 runs:
   using: "docker"
